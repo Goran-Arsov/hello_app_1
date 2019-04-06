@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
     def index
         @sample_text = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+        @posts = Post.all
     end
 
     def new
