@@ -1,4 +1,4 @@
 class Category < ApplicationRecord
-    attr_accessor :name
     has_many :posts
+    validates :name, presence: true
 end
